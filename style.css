@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fff;
+    font-family: 'Bodoni Moda', serif;
+    color: #000;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 481px) {
+   
+    .general__izquierda{
+        width: 50%;
+        float: left;
+        height: 100vh;
+        padding: 20px;
+    }
+    .general__derecho{
+        width: 50%;
+        float: left;
+        height: 100vh;
+
+        padding: 20px;
+    }
+    .general__derecho--arriba{
+        height: 10%;
+    }
+    .general__derecho--abajo{
+        height: 90%;
+    }
+    .general__derecho--abajo img{
+        width: 500px;
+        height: 500px;
+    }   
+    .general__derecho--abajo .slide{
+        width: 500px;
+        height: 600px;
+    }   
+    .caballo{
+            position: absolute;
+            top: 0; /* Posición inicial en la parte superior */
+            left: 0%; /* Ajusta la posición horizontalmente */
+            transform: translateY(0); /* Inicialmente sin desplazamiento vertical */
+            animation: moveUpDown 3s infinite alternate; /* Animación de movimiento */
+          
+        width: 300px;
+        height: 300px;
+    }
+    @keyframes moveUpDown {
+        0% {
+          transform: translateY(0); /* Sin desplazamiento vertical */
+        }
+        100% {
+          transform: translateY(400px); /* Desplazamiento hacia abajo */
+        }
+      }
+      .carousel {
+        height: 80%;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .slide.active {
+        opacity: 1;
+      }
+
+}
