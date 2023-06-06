@@ -6,39 +6,23 @@
 body{
     font-family: 'Bodoni Moda', serif;
     color: #000;
-    background-color: #fd4c00;
-    
 
 }
 a{
     text-decoration: none;
     color: #000;
 }
-p{
-    text-align: justify;
-}
 @media screen and (max-width: 480px) {
 
 }
 
 @media screen and (min-width: 481px) {
-    .cont{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
     header {
       height: 10vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 1;
-      padding-left: 165px;
-      padding-top: 10px;
     }
     .header-title{
       width: 30%;
@@ -53,7 +37,6 @@ p{
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-left: 175px;
     }
     .header-menu ul{
       width: 100%;
@@ -65,47 +48,60 @@ p{
     .header-menu ul li{
       width: 20%;
       list-style: none;
-
-      padding-right: 200px;
     }
 
     a{
         color: #000;
     }
     a:hover{
-        color: #ddd;
+        color: #333;
     }
-
-    .general{
-        width: 50%;
-        height: 100vh;
-    }
-    .texto{
+    .proyectos{
         width: 100%;
         height: 90vh;
+        
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .texto-cont{
-        width: 50%;
-        height: 50%;
+    .proyecto{
+        width: 30%;
+        height: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column;
+        margin: 10px;
     }
-
-     .imagen{
-        width: 50%;
-        height: 100vh;
-       }
-       .imagen img{
+    .proyecto a {
         width: 100%;
         height: 100%;
-        
-       }
-   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .proyecto-img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .proyecto-img img{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+    .proyecto-info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     
     .caballo{
             position: absolute;
             top: 0; /* Posición inicial en la parte superior */
@@ -125,7 +121,7 @@ p{
         }
       }
       .carousel {
-        height: 100%;
+        height: 80%;
         position: relative;
         overflow: hidden;
       }
@@ -136,8 +132,6 @@ p{
         left: 0;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
-
-  object-fit: cover;
       }
       
       .slide.active {

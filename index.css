@@ -4,51 +4,62 @@
     box-sizing: border-box;
 }
 body{
-    background-color:#fff;
+    background-image: url('./imagenes/KOBENHAVN\,\ 2022.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Bodoni Moda', serif;
     color: #fff;
-    background-image: url('./imagenes/KOBENHAVN\,\ 2022.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 @media screen and (max-width: 480px) {
 
 }
 
 @media screen and (min-width: 481px) {
-   
-    .general__izquierda{
-        width: 50%;
-        float: left;
-        height: 100vh;
-        padding: 20px;
+    header {
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .general__derecho{
-        width: 50%;
-        float: left;
-        height: 100vh;
+    .header-title{
+      width: 30%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-menu{
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-menu ul{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    .header-menu ul li{
+      width: 20%;
+      list-style: none;
+    }
 
-        padding: 20px;
+    a{
+        color: #fff;
     }
-    .general__derecho--arriba{
-        height: 10%;
+    a:hover{
+        color: #ddd;
     }
-    .general__derecho--abajo{
-        height: 90%;
-    }
-    .general__derecho--abajo img{
-        width: 500px;
-        height: 500px;
-    }   
-    .general__derecho--abajo .slide{
-        width: 500px;
-        height: 600px;
-    }   
+     
     .caballo{
             position: absolute;
             top: 0; /* Posición inicial en la parte superior */
