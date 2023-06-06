@@ -2,19 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: justify;
 }
 body{
     background-color:#fff;
     font-family: 'Bodoni Moda', serif;
-    color: #fff;
-    background-image: url('./imagenes/KOBENHAVN\,\ 2022.jpg');
+    color: #000;
+    background-image: url('./imagenes/7/1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 @media screen and (max-width: 480px) {
 
